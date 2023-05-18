@@ -20,9 +20,6 @@
 
                 {{ gerenciamento.categoria.label(for="categoria") }}
                 <select name="categoria">
-                {% for o in data %}
-                <option value="{{ o.name }}">{{ o.name }}</option>
-                {% endfor %}
                     {% for c in categoria %}
                 <option value="{{ c.categoria }}">{{ c.categoria.lower().capitalize() }}</option>
                 {% endfor %}
@@ -119,5 +116,5 @@
                  {% endfor %}
             </tbody>
           </table>
-{% endblock %}
 
+{% endblock %}
